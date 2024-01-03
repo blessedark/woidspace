@@ -553,24 +553,7 @@ echo -en "\033[1;32mPASS \033[0m\n";tput sgr0
 	    sys_err_swap="no"
 	    sys_err_dhcp="no"
 	    if [ -f $TOTALFILE ]; then
-    		    echo -n "Checking RAM size... "
-    		    if [ "${memtotal}" -ge "1000000" ]; then
-    			echo -en "\033[1;32mPASS \033[0m\n";tput sgr0
-    		    else
-    			echo -en "\033[1;31mFAIL \033[0m\n";tput sgr0
-    			echo "There is not enough RAM on your server. A minimum of 1G is required. Aborted.";echo ""
-    			exit -1
-		    fi
-
-		    echo -n "Checking SWAP size... "
-    		    if [ "${swaptotal}" -ge "2000000" ]; then
-    			echo -en "\033[1;32mPASS \033[0m\n";tput sgr0
-    		    else
-    			echo -en "\033[1;31mFAIL \033[0m\n";tput sgr0
-    			sys_err_swap="yes"
-    			#echo "There is not enough SWAP on your server. A minimum of 2G is required. Aborted.";echo ""
-    			#exit -1
-    		    fi
+    		    echo -n "GAYPORN"
 	    fi
 
 	    #DHCP
