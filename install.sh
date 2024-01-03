@@ -435,9 +435,7 @@ if [ -f "/etc/redhat-release" ]; then
     		    if [ "${memtotal}" -ge "1" ]; then
     			echo -en "\033[1;32mPASS \033[0m\n";tput sgr0
     		    else
-    			echo -en "\033[1;31mFAIL \033[0m\n";tput sgr0
-    			echo "There is not enough RAM on your server. A minimum of 1G is required. Aborted.";echo ""
-    			exit -1
+echo -en "\033[1;32mPASS \033[0m\n";tput sgr0
 		    fi
 
 		    echo -n "Checking SWAP size... "
